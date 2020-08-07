@@ -86,7 +86,7 @@ extension ViewController :UITableViewDelegate,UITableViewDataSource{
         return 100
     }
     func showActivity(myView: UIView, myTitle: String) {
-        let THEME_COLOUR = UIColor (red:0.188, green:0.682, blue:0.886, alpha:0.5)
+        let THEME_COLOUR = UIColor (red:0.25, green:0.65, blue:0.333, alpha:0.5)
         myView.isUserInteractionEnabled = false
         myView.window?.isUserInteractionEnabled = false
         myView.endEditing(true)
@@ -96,7 +96,7 @@ extension ViewController :UITableViewDelegate,UITableViewDataSource{
 
         loadingView.frame = CGRect(x: 0, y: 0, width: 80, height: 80)
         loadingView.center = myView.center
-        loadingView.backgroundColor = THEME_COLOUR
+        //loadingView.backgroundColor = THEME_COLOUR
         loadingView.clipsToBounds = true
         loadingView.layer.cornerRadius = 15
 
