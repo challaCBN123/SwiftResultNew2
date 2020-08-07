@@ -82,11 +82,11 @@
 			children = (
 				4CFC0CD624D6CD350037AF78 /* AppDelegate.swift */,
 				4CFC0CD824D6CD350037AF78 /* SceneDelegate.swift */,
+				4CFC0CEF24D6CD620037AF78 /* urlServices.swift */,
+				4CFC0CED24D6CD5D0037AF78 /* serviceData.swift */,
 				4CFC0CDA24D6CD350037AF78 /* ViewController.swift */,
 				4CE4B4B624DA79E60053635D /* DataCell.swift */,
 				4CFC0CDC24D6CD350037AF78 /* Main.storyboard */,
-				4CFC0CEF24D6CD620037AF78 /* urlServices.swift */,
-				4CFC0CED24D6CD5D0037AF78 /* serviceData.swift */,
 				4CFC0CE224D6CD390037AF78 /* Assets.xcassets */,
 				4CFC0CE424D6CD390037AF78 /* LaunchScreen.storyboard */,
 				4CFC0CE724D6CD390037AF78 /* Info.plist */,

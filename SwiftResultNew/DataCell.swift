@@ -9,6 +9,7 @@
 import UIKit
 
 class DataCell: UITableViewCell {
+    @IBOutlet weak var serialNoLbl: UILabel!
     @IBOutlet weak var nameLbl:UILabel!
     @IBOutlet weak var cityLbl:UILabel!
     @IBOutlet weak var pinLbl:UILabel!
