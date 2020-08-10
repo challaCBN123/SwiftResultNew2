@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4C3BFF2924DD5ADE00D61FF6 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C3BFF2824DD5ADE00D61FF6 /* DetailsViewController.swift */; };
 		4CE4B4B724DA79E70053635D /* DataCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CE4B4B624DA79E60053635D /* DataCell.swift */; };
 		4CFC0CD724D6CD350037AF78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC0CD624D6CD350037AF78 /* AppDelegate.swift */; };
 		4CFC0CD924D6CD350037AF78 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4CFC0CD824D6CD350037AF78 /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		150AE7570E2B6A452C36D0D0 /* Pods_SwiftResultNew.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SwiftResultNew.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C3BFF2824DD5ADE00D61FF6 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		4CE4B4B624DA79E60053635D /* DataCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCell.swift; sourceTree = "<group>"; };
 		4CFC0CD324D6CD350037AF78 /* SwiftResultNew.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftResultNew.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4CFC0CD624D6CD350037AF78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				4CFC0CEF24D6CD620037AF78 /* urlServices.swift */,
 				4CFC0CED24D6CD5D0037AF78 /* serviceData.swift */,
 				4CFC0CDA24D6CD350037AF78 /* ViewController.swift */,
+				4C3BFF2824DD5ADE00D61FF6 /* DetailsViewController.swift */,
 				4CE4B4B624DA79E60053635D /* DataCell.swift */,
 				4CFC0CDC24D6CD350037AF78 /* Main.storyboard */,
 				4CFC0CE224D6CD390037AF78 /* Assets.xcassets */,
@@ -221,6 +224,7 @@
 				4CFC0CDB24D6CD350037AF78 /* ViewController.swift in Sources */,
 				4CFC0CF024D6CD620037AF78 /* urlServices.swift in Sources */,
 				4CFC0CEE24D6CD5D0037AF78 /* serviceData.swift in Sources */,
+				4C3BFF2924DD5ADE00D61FF6 /* DetailsViewController.swift in Sources */,
 				4CE4B4B724DA79E70053635D /* DataCell.swift in Sources */,
 				4CFC0CE124D6CD350037AF78 /* SwiftResultNew.xcdatamodeld in Sources */,
 				4CFC0CD724D6CD350037AF78 /* AppDelegate.swift in Sources */,

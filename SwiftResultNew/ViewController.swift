@@ -9,19 +9,20 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-struct dataUrl:Decodable{
-    var postId: Int
-    var id: Int
-   var name: String
-   var email: String
-    var body:String
-}
+
+
 
 enum PARAMETER_ENCODING{
     static let URL_ENCODING = "URLEncoding"
     static let JSON_ENCODING = "JSONEncoding"
 }
-class ViewController: UIViewController {
+class ViewController: UIViewController ,sendDataDelegate{
+    
+    var name = String()
+    
+   var refreshController:UIRefreshControl = UIRefreshControl()
+   
+    @IBOutlet weak var tblViewLbl:UILabel!
     @IBOutlet weak var tblView:UITableView!
     var arraySerach: [DataUrl] = []
     var actView: UIView = UIView()
@@ -33,10 +34,13 @@ class ViewController: UIViewController {
      let endKey = ""
        let baseURLString = "https://developers.zomato.com/api/v2.1/geocode?lat=16.515099&lon=80.632095"
       let apiKey = "c56ce01dafd40a68e12e336e50d91e0b"
-    
+    func passData(name: String) {
+        self.tblViewLbl.text = name
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         getdata()
+        print("reload")
               }
     
     func getdata(){
@@ -66,6 +70,9 @@ class ViewController: UIViewController {
                     
                 }
     }
+
+        
+    
 }
 extension ViewController :UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,6 +88,32 @@ extension ViewController :UITableViewDelegate,UITableViewDataSource{
         cell.pinLbl.text = dict.address?.zipcode ?? ""
         cell.serialNoLbl.text = "\(indexPath.row + 1)"
         return cell
+    }
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+       var titleSection = String()
+        if section == 0{
+              titleSection = "Employee Details"
+        }
+        return titleSection
+    }
+   
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let stBoard = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "DetailsViewController") as! DetailsViewController
+        stBoard.Delegate = self
+        let dict = arraySerach[indexPath.row]
+      
+
+        stBoard.id = "\(dict.id ?? 0)"
+        stBoard.name = dict.name ?? ""
+        stBoard.userName = dict.username ?? ""
+        stBoard.email = dict.email ?? ""
+        stBoard.phone = dict.phone ?? ""
+        stBoard.website = dict.website ?? ""
+        stBoard.steet = dict.address?.street ?? ""
+        stBoard.city = dict.address?.city ?? ""
+        stBoard.companyName = dict.company?.name ?? ""
+        stBoard.zip = dict.address?.zipcode ?? ""
+        self.navigationController?.pushViewController(stBoard, animated: true)
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
