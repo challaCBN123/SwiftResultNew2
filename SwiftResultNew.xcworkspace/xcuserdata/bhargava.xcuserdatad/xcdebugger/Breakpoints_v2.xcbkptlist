@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "5E164C36-45D1-466A-AB54-A3C84C395D4A"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "671B2FE6-4D4E-4D29-A58F-D2CB0B7B0F61"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftResultNew/serviceData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "25"
+            endingLineNumber = "25"
+            landmarkName = "gettingDataUsingUrl(baseUrl:serviceUrl:parameter:encoding:CompletionHandler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "30ABE888-09DF-4AE5-8F53-92DA80796E23"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftResultNew/serviceData.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "16"
+            endingLineNumber = "16"
+            landmarkName = "gettingDataUsingUrl(baseUrl:serviceUrl:parameter:encoding:CompletionHandler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "30ABE888-09DF-4AE5-8F53-92DA80796E23 - 20bbda00f1fb3055"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SwiftResultNew.GetData.gettingDataUsingUrl(baseUrl: Swift.String, serviceUrl: Swift.String, encoding: Swift.String, CompletionHandler: (Swift.Optional&lt;Swift.Array&lt;SwiftResultNew.DataUrl&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "SwiftResultNew"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bhargava/Documents/SwiftResultNew/SwiftResultNew/serviceData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "16"
+                  endingLineNumber = "16"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "30ABE888-09DF-4AE5-8F53-92DA80796E23 - 82a2f4e7a1afcd0c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Alamofire.DataResponse&lt;Any, Alamofire.AFError&gt;) -&gt; () in SwiftResultNew.GetData.gettingDataUsingUrl(baseUrl: Swift.String, serviceUrl: Swift.String, encoding: Swift.String, CompletionHandler: (Swift.Optional&lt;Swift.Array&lt;SwiftResultNew.DataUrl&gt;&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "SwiftResultNew"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/bhargava/Documents/SwiftResultNew/SwiftResultNew/serviceData.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "146">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E67B9D39-A708-4523-9868-63163A440298"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SwiftResultNew/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "passData(name:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
