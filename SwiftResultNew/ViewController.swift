@@ -9,19 +9,17 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
-
-
-
+protocol AddItemDelegateProtocol {
+    func didAddItem()
+}
 enum PARAMETER_ENCODING{
     static let URL_ENCODING = "URLEncoding"
     static let JSON_ENCODING = "JSONEncoding"
 }
 class ViewController: UIViewController ,sendDataDelegate{
     
-    var name = String()
-    
+   var delegateReload:AddItemDelegateProtocol!
    var refreshController:UIRefreshControl = UIRefreshControl()
-   
     @IBOutlet weak var tblViewLbl:UILabel!
     @IBOutlet weak var tblView:UITableView!
     var arraySerach: [DataUrl] = []
@@ -39,9 +37,12 @@ class ViewController: UIViewController ,sendDataDelegate{
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+       // addItemVC.delegateReload = self
         getdata()
         print("reload")
-              }
+
+    }
+    
     
     func getdata(){
          DispatchQueue.main.async {self.showActivity(myView: self.view, myTitle: "Loading.....")}
@@ -71,7 +72,7 @@ class ViewController: UIViewController ,sendDataDelegate{
                 }
     }
 
-        
+      
     
 }
 extension ViewController :UITableViewDelegate,UITableViewDataSource{
@@ -100,9 +101,10 @@ extension ViewController :UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let stBoard = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(identifier: "DetailsViewController") as! DetailsViewController
         stBoard.Delegate = self
+       
         let dict = arraySerach[indexPath.row]
       
-
+        
         stBoard.id = "\(dict.id ?? 0)"
         stBoard.name = dict.name ?? ""
         stBoard.userName = dict.username ?? ""

@@ -9,9 +9,11 @@
 import UIKit
 protocol sendDataDelegate{
     func passData(name:String)
+    
 }
-class DetailsViewController: UIViewController{
-  
+
+class DetailsViewController: UIViewController,AddItemDelegateProtocol{
+    var addItemVc = ViewController()
     var Delegate : sendDataDelegate!
     var id = String()
     var name = String()
@@ -45,9 +47,16 @@ class DetailsViewController: UIViewController{
         self.streetLbl.text = "StreetName : --  " + steet
         self.cityLbl.text = "City : --  " + city
         self.zipCodeLbl.text = "ZipCode : --  " + zip
-        
+        addItemVc.delegateReload = self
         Delegate.passData(name: name)
+       
     }
-    
+    func didAddItem() {
+              DispatchQueue.main.async {
+                self.addItemVc.tblView.reloadData()
+              }
+           
+              print("Success")
+          }
 
 }
